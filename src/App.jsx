@@ -16,7 +16,7 @@ function App() {
 
       <div className="flex flex-1">
 
-        {/* <Sidebar /> */}
+        <Sidebar />
 
         <main className="flex-1 p-6">
 
