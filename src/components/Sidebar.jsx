@@ -32,7 +32,7 @@ const Sidebar = () => {
   const [priceRange, setPriceRange] = useState([13, 25]);
 
   return (
-    <div className="absolute w-[355px] h-[1385px] top-[95.27px] left-[21.4px] opacity-100 space-y-6">
+    <div className=" w-[355px] h-[1385px] top-[95.27px] left-[21.4px] opacity-100 space-y-6">
       <div className="w-[349.23px] h-[548.57px] bg-[#F6F7F8] rounded-xl shadow-md p-5">
         <h3 className="font-semibold font-[Poppins] text-[20px] mb-10 text-[#22262A]">
           Hot Deals
