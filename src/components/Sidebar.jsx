@@ -1,5 +1,3 @@
-
-
 import { useState } from "react";
 import * as Slider from "@radix-ui/react-slider";
 
@@ -31,25 +29,22 @@ const Sidebar = () => {
   ];
 
   const [selectedColor, setSelectedColor] = useState("#3b82f6");
-
-
   const [priceRange, setPriceRange] = useState([13, 25]);
 
   return (
     <div className="absolute w-[355px] h-[1385px] top-[95.27px] left-[21.4px] opacity-100 space-y-6">
-
       <div className="w-[349.23px] h-[548.57px] bg-[#F6F7F8] rounded-xl shadow-md p-5">
-        <h3 className="font-semibold font-[Poppins] text-[20px] leading-[100%] tracking-[0] text-[#22262A] mb-10">
+        <h3 className="font-semibold font-[Poppins] text-[20px] mb-10 text-[#22262A]">
           Hot Deals
         </h3>
-        <ul className="space-y-9 leading-relaxed">
+        <ul className="space-y-9">
           {deals.map((deal, index) => (
             <li key={index} className="flex justify-between items-center">
               <span
                 className={
                   deal.active
-                    ? "text-blue-600 font-proxima font-normal text-[18px] cursor-pointer"
-                    : "text-gray-800 font-proxima font-normal text-[18px] cursor-pointer hover:text-gray-900"
+                    ? "text-blue-600 text-[18px] cursor-pointer"
+                    : "text-gray-800 text-[18px] cursor-pointer hover:text-gray-900"
                 }
               >
                 {deal.name}
@@ -69,14 +64,13 @@ const Sidebar = () => {
       </div>
 
       <div className="w-[347.94px] h-[190.35px] bg-[#F6F7F8] rounded-xl shadow-md p-8">
-        <h3 className="font-proxima font-semibold text-[18px] mb-12">PRICES</h3>
+        <h3 className="font-semibold text-[18px] mb-12">PRICES</h3>
         <div className="flex justify-between text-sm text-gray-600 mb-2">
           <span>Range:</span>
           <span>
             ${priceRange[0]}.99 - ${priceRange[1]}.99
           </span>
         </div>
-
         <Slider.Root
           className="relative flex items-center select-none w-full h-5"
           value={priceRange}
@@ -94,7 +88,7 @@ const Sidebar = () => {
       </div>
 
       <div className="w-[347.94px] h-[144.22px] bg-[#F6F7F8] rounded-xl shadow-md p-6">
-        <h3 className="font-proxima font-semibold text-[18px] mb-8">COLOR</h3>
+        <h3 className="font-semibold text-[18px] mb-8">COLOR</h3>
         <div className="flex gap-7">
           {colors.map((c, idx) => (
             <button
@@ -102,7 +96,7 @@ const Sidebar = () => {
               type="button"
               aria-label={`Select color ${c}`}
               onClick={() => setSelectedColor(c)}
-              className={`w-7 h-7 rounded-full flex items-center justify-center transition 
+              className={`w-7 h-7 rounded-full transition 
                 ${
                   selectedColor === c
                     ? "ring-2 ring-green-500"
@@ -115,27 +109,27 @@ const Sidebar = () => {
       </div>
 
       <div className="w-[347.94px] h-[303.15px] bg-[#F6F7F8] rounded-xl shadow-md p-6">
-        <h3 className="font-proxima text-[18px] mb-6 font-semibold">BRAND</h3>
+        <h3 className="font-semibold text-[18px] mb-6">BRAND</h3>
         <ul className="space-y-8">
-          {brands.map((deal, index) => (
+          {brands.map((brand, index) => (
             <li key={index} className="flex justify-between items-center">
               <span
                 className={
-                  deal.active
-                    ? "text-blue-600 font-proxima font-normal text-[18px] cursor-pointer"
-                    : "text-gray-800 font-proxima font-normal text-[18px] cursor-pointer hover:text-gray-900"
+                  brand.active
+                    ? "text-blue-600 text-[18px] cursor-pointer"
+                    : "text-gray-800 text-[18px] cursor-pointer hover:text-gray-900"
                 }
               >
-                {deal.name}
+                {brand.name}
               </span>
               <span
                 className={
-                  deal.active
+                  brand.active
                     ? "text-blue-600 font-semibold text-sm"
                     : "text-gray-400 text-sm"
                 }
               >
-                {deal.count}
+                {brand.count}
               </span>
             </li>
           ))}
