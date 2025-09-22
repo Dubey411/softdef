@@ -1,8 +1,3 @@
-import Icon from "../assets/Icon.png";
-import Payment from '../assets/Payment.png'
-import Twitter from '../assets/Twitter.png'
-import Facebook from '../assets/Facebook.png'
-
 export default function Footer() {
   return (
     <footer className="bg-[#BCDDFE] text-[#22262A]">
@@ -10,7 +5,7 @@ export default function Footer() {
         {/* Left - Branding */}
         <div>
           <div className="flex items-center gap-2 mb-4">
-            <img src={Icon} alt="E-Comm Logo" className="w-8 h-8" />
+            <img src="/Icon.png" alt="E-Comm Logo" className="w-8 h-8" />
             <span className="font-poppins font-bold text-[20px]">E-Comm</span>
           </div>
           <p className="text-sm text-gray-700">
@@ -26,8 +21,8 @@ export default function Footer() {
             Since the 1500s, when an unknown printer took a galley of type and scrambled.
           </p>
           <div className="flex gap-4">
-             <img src={Facebook} alt="E-Comm Logo"  />
-             <img src={Twitter} alt="E-Comm Logo" />
+            <img src="/Facebook.png" alt="Facebook" className="w-6 h-6" />
+            <img src="/Twitter.png" alt="Twitter" className="w-6 h-6" />
           </div>
         </div>
 
@@ -64,7 +59,11 @@ export default function Footer() {
         <div className="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500">
           <p>© 2018 Ecommerce theme by www.bisenbaev.com</p>
           <div className="flex gap-4 mt-4 md:mt-0">
-            <img src={Payment} alt="E-Comm Logo" className="w-[212.3px] h-[23.34px]" />
+            <img
+              src="/Payment.png"
+              alt="Payment Methods"
+              className="w-[212px] h-[23px]"
+            />
           </div>
         </div>
       </div>
