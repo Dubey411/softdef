@@ -1,17 +1,15 @@
-import Icon from "../assets/Icon.png";
-import Cart from "../assets/cart.png";
-
 export default function Navbar() {
   return (
-    <nav className="w-full h-[60px] flex items-center justify-between px-8 ">
+    <nav className="w-full h-[60px] flex items-center justify-between px-8">
+      {/* Left Logo */}
       <div className="flex items-center gap-2">
-        <img src={Icon} alt="Logo Icon" />
-
+        <img src="/Icon.png" alt="Logo Icon" className="h-6 w-6" />
         <span className="font-poppins font-bold text-[24px] leading-[36px] text-[#22262A]">
           E-Comm
         </span>
       </div>
 
+      {/* Center Menu */}
       <ul className="flex gap-[100px] font-poppins text-[16px] font-normal text-[#22262A]">
         <li className="text-[#40BFFF] cursor-pointer">HOME</li>
         <li className="hover:text-[#40BFFF] cursor-pointer">BAG</li>
@@ -20,11 +18,9 @@ export default function Navbar() {
         <li className="hover:text-[#40BFFF] cursor-pointer">CONTACT</li>
       </ul>
 
+      {/* Right Cart */}
       <div className="flex items-center gap-2">
-        <img
-          src={Cart}
-          alt="Cart"
-         />
+        <img src="/cart.png" alt="Cart" className="h-5 w-5" />
         <span className="font-poppins text-[16px] font-normal text-[#22262A]">
           Items
         </span>
