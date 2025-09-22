@@ -1,9 +1,11 @@
+
+
 export default function Pagination() {
   const pages = [1, 2, 3, 4, 5];
   const currentPage = 3;
 
   return (
-    <div className="w-[1069px] h-[68.56px] mx-auto -mt-1 bg-[#F6F7F8] shadow-md flex items-center justify-center py-4">
+    <div className="w-full h-[68.56px] mx-auto -mt-1 bg-[#F6F7F8] shadow-md flex items-center justify-center py-4 mb-6">
       <div className="flex gap-6">
         {pages.map((page) => (
           <button
