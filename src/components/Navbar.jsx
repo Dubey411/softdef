@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import Icon from "../assets/Icon.png";
 // import Cart from "../assets/cart.png";
 
