@@ -1,12 +1,85 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# 🛒 E-Comm Frontend Test
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a frontend implementation of an **E-commerce UI** built with **React + Vite** and styled using **TailwindCSS**.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+* **Responsive Navbar** with Logo, Navigation Links, and Cart Section.
+* **Hero Section** with fixed dimensions for consistent layout.
+* **Product Cards**
+
+  * Exact image sizes preserved.
+  * Product details (HOT badge, name, rating, price, discount).
+* **Footer Section** with branding, social media, contact info, and payment icons.
+* **Deployed on Vercel** for live preview.
+
+---
+
+## 📦 Tech Stack
+
+* ⚛️ **React + Vite**
+* 🎨 **TailwindCSS**
+* 🖼️ Local Assets (PNG Images for UI)
+* 🌐 **Vercel Deployment**
+
+---
+
+## 🛠️ Setup & Installation
+
+1. **Clone the repo**
+
+   ```bash
+   git clone https://github.com/your-username/e-comm-frontend.git
+   cd e-comm-frontend
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run locally**
+
+   ```bash
+   npm run dev
+   ```
+
+   App will start at 👉 [http://localhost:5173](http://localhost:5173)
+
+4. **Build for production**
+
+   ```bash
+   npm run build
+   ```
+
+---
+
+## 🌍 Live Demo
+
+🔗 https://softdef-3t52.vercel.app/
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+ ├── assets/        # Images & icons
+ ├── components/    # Navbar, Footer, ProductCard, ProductList
+ ├── App.jsx        # Root component
+ └── main.jsx       # Entry point
+```
+
+---
+
+## 👨‍💻 Author
+
+SHUBHAM DUBEY
+
+
+
